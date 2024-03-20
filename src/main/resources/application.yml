@@ -1,0 +1,12 @@
+kafka:
+  consumer:
+    bootstrapServers: localhost:29092
+    groupId: todolist-task-distributor
+    autoOffsetReset: latest
+    maxPollIntervalMs: 300_000
+    enableAutoCommit: false
+    concurrency: 1
+    schemaRegistryUrl: 'http://localhost:28081'
+
+server:
+  port: 8081
