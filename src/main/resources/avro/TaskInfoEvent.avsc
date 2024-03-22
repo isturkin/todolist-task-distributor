@@ -5,7 +5,7 @@
   "fields": [
     {
       "name": "taskId",
-      "type": ["string"]
+      "type": "string"
     }
   ]
 }
