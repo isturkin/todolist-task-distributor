@@ -20,7 +20,7 @@ public class TaskInfoListener {
     public void handleMessage(@Payload TaskInfoEvent taskInfoEvent, Acknowledgment acknowledgment) {
         log.info("Task info received: " + taskInfoEvent.getTaskId());
 
-        taskInfoService.getExtendedTaskInfo(taskInfoEvent.getTaskId());
+//        taskInfoService.getExtendedTaskInfo(taskInfoEvent.getTaskId());
 
         acknowledgment.acknowledge();
     }

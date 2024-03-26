@@ -30,11 +30,19 @@ dependencyManagement {
     }
 }
 
+def resilience4jVersion = '2.2.0'
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
     // EUREKA CLIENT
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+
+    // resilience4j
+    implementation("io.github.resilience4j:resilience4j-spring-boot3:$resilience4jVersion")
+    implementation("io.github.resilience4j:resilience4j-circuitbreaker:$resilience4jVersion")
 
     implementation("org.springframework.kafka:spring-kafka")
     implementation("org.apache.avro:avro:1.11.3")
