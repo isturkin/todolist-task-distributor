@@ -1,4 +1,4 @@
-package tech.speckit.todolist.tasks.distributor.domain.model;
+package org.example.todolist.tasks.distributor.domain.model;
 
 import lombok.Getter;
 import lombok.Setter;

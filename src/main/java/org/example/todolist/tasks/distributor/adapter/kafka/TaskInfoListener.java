@@ -1,13 +1,13 @@
-package tech.speckit.todolist.tasks.distributor.adapter.kafka;
+package org.example.todolist.tasks.distributor.adapter.kafka;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.example.todolist.tasks.distributor.domain.service.TaskInfoService;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
-import tech.speckit.todolist.avro.TaskInfoEvent;
-import tech.speckit.todolist.tasks.distributor.domain.service.TaskInfoService;
+import org.example.todolist.avro.TaskInfoEvent;
 
 @Slf4j
 @RequiredArgsConstructor

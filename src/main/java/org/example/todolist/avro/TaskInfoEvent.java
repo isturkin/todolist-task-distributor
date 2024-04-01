@@ -3,11 +3,9 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package tech.speckit.todolist.avro;
+package org.example.todolist.avro;
 
-import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
-import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
 import org.apache.avro.message.SchemaStore;
@@ -17,7 +15,7 @@ public class TaskInfoEvent extends org.apache.avro.specific.SpecificRecordBase i
   private static final long serialVersionUID = -5599441023494690190L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TaskInfoEvent\",\"namespace\":\"tech.speckit.todolist.avro\",\"fields\":[{\"name\":\"taskId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TaskInfoEvent\",\"namespace\":\"org.example.todolist.avro\",\"fields\":[{\"name\":\"taskId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -136,8 +134,8 @@ public class TaskInfoEvent extends org.apache.avro.specific.SpecificRecordBase i
    * Creates a new TaskInfoEvent RecordBuilder.
    * @return A new TaskInfoEvent RecordBuilder
    */
-  public static tech.speckit.todolist.avro.TaskInfoEvent.Builder newBuilder() {
-    return new tech.speckit.todolist.avro.TaskInfoEvent.Builder();
+  public static TaskInfoEvent.Builder newBuilder() {
+    return new TaskInfoEvent.Builder();
   }
 
   /**
@@ -145,11 +143,11 @@ public class TaskInfoEvent extends org.apache.avro.specific.SpecificRecordBase i
    * @param other The existing builder to copy.
    * @return A new TaskInfoEvent RecordBuilder
    */
-  public static tech.speckit.todolist.avro.TaskInfoEvent.Builder newBuilder(tech.speckit.todolist.avro.TaskInfoEvent.Builder other) {
+  public static TaskInfoEvent.Builder newBuilder(TaskInfoEvent.Builder other) {
     if (other == null) {
-      return new tech.speckit.todolist.avro.TaskInfoEvent.Builder();
+      return new TaskInfoEvent.Builder();
     } else {
-      return new tech.speckit.todolist.avro.TaskInfoEvent.Builder(other);
+      return new TaskInfoEvent.Builder(other);
     }
   }
 
@@ -158,11 +156,11 @@ public class TaskInfoEvent extends org.apache.avro.specific.SpecificRecordBase i
    * @param other The existing instance to copy.
    * @return A new TaskInfoEvent RecordBuilder
    */
-  public static tech.speckit.todolist.avro.TaskInfoEvent.Builder newBuilder(tech.speckit.todolist.avro.TaskInfoEvent other) {
+  public static TaskInfoEvent.Builder newBuilder(TaskInfoEvent other) {
     if (other == null) {
-      return new tech.speckit.todolist.avro.TaskInfoEvent.Builder();
+      return new TaskInfoEvent.Builder();
     } else {
-      return new tech.speckit.todolist.avro.TaskInfoEvent.Builder(other);
+      return new TaskInfoEvent.Builder(other);
     }
   }
 
@@ -184,7 +182,7 @@ public class TaskInfoEvent extends org.apache.avro.specific.SpecificRecordBase i
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(tech.speckit.todolist.avro.TaskInfoEvent.Builder other) {
+    private Builder(TaskInfoEvent.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.taskId)) {
         this.taskId = data().deepCopy(fields()[0].schema(), other.taskId);
@@ -196,7 +194,7 @@ public class TaskInfoEvent extends org.apache.avro.specific.SpecificRecordBase i
      * Creates a Builder by copying an existing TaskInfoEvent instance
      * @param other The existing instance to copy.
      */
-    private Builder(tech.speckit.todolist.avro.TaskInfoEvent other) {
+    private Builder(TaskInfoEvent other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.taskId)) {
         this.taskId = data().deepCopy(fields()[0].schema(), other.taskId);
@@ -218,7 +216,7 @@ public class TaskInfoEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'taskId'.
       * @return This builder.
       */
-    public tech.speckit.todolist.avro.TaskInfoEvent.Builder setTaskId(java.lang.String value) {
+    public TaskInfoEvent.Builder setTaskId(java.lang.String value) {
       validate(fields()[0], value);
       this.taskId = value;
       fieldSetFlags()[0] = true;
@@ -238,7 +236,7 @@ public class TaskInfoEvent extends org.apache.avro.specific.SpecificRecordBase i
       * Clears the value of the 'taskId' field.
       * @return This builder.
       */
-    public tech.speckit.todolist.avro.TaskInfoEvent.Builder clearTaskId() {
+    public TaskInfoEvent.Builder clearTaskId() {
       taskId = null;
       fieldSetFlags()[0] = false;
       return this;

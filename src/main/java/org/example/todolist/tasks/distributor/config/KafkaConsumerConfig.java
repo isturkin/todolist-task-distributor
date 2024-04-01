@@ -1,10 +1,12 @@
-package tech.speckit.todolist.tasks.distributor.config;
+package org.example.todolist.tasks.distributor.config;
 
 import io.confluent.kafka.serializers.KafkaAvroDeserializer;
 import io.confluent.kafka.serializers.KafkaAvroDeserializerConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.example.todolist.avro.TaskInfoEvent;
+import org.example.todolist.tasks.distributor.config.props.KafkaConsumerProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
@@ -16,8 +18,6 @@ import org.springframework.kafka.listener.DefaultErrorHandler;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
 import org.springframework.util.backoff.BackOff;
 import org.springframework.util.backoff.FixedBackOff;
-import tech.speckit.todolist.avro.TaskInfoEvent;
-import tech.speckit.todolist.tasks.distributor.config.props.KafkaConsumerProperties;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package tech.speckit.todolist.tasks.distributor.config;
+package org.example.todolist.tasks.distributor.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

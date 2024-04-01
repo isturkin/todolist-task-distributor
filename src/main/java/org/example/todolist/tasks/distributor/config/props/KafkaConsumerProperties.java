@@ -1,4 +1,4 @@
-package tech.speckit.todolist.tasks.distributor.config.props;
+package org.example.todolist.tasks.distributor.config.props;
 
 import lombok.Getter;
 import lombok.Setter;

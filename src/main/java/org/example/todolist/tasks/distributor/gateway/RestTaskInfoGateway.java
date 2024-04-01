@@ -1,4 +1,4 @@
-package tech.speckit.todolist.tasks.distributor.gateway;
+package org.example.todolist.tasks.distributor.gateway;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
@@ -7,8 +7,8 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import tech.speckit.todolist.tasks.distributor.domain.model.TaskInfo;
-import tech.speckit.todolist.tasks.distributor.domain.service.TaskInfoGateway;
+import org.example.todolist.tasks.distributor.domain.model.TaskInfo;
+import org.example.todolist.tasks.distributor.domain.service.TaskInfoGateway;
 
 import java.util.Random;
 import java.util.concurrent.TimeoutException;

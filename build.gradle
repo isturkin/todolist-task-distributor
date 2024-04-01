@@ -9,7 +9,6 @@ ext {
     set('mapstructVersion', "1.5.2.Final")
 }
 
-group = 'tech.speckit'
 sourceCompatibility = '17'
 
 repositories {

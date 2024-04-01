@@ -1,4 +1,4 @@
-package tech.speckit.todolist.tasks.distributor.adapter.dto;
+package org.example.todolist.tasks.distributor.adapter.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package tech.speckit.todolist.tasks.distributor;
+package org.example.todolist.tasks.distributor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
